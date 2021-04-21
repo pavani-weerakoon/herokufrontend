@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "postinstall": "ng build --output-path angularapp  --aot --prod",
     "start": "set NODE_OPTIONS=--max_old_space_size=8048 && ng serve",
     "build": "set NODE_OPTIONS=--max_old_space_size=8048 && ng build",
     "test": "ng test",
