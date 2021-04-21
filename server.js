@@ -12,7 +12,7 @@ const fs = require('fs');
 
 
 
-fs.readdir(path.join(__dirname+'/dist'), (err, files) => {
+fs.readdir(path.join(__dirname+'/dist/SDGP'), (err, files) => {
   files.forEach(file => {
     console.log(file);
   });
@@ -26,7 +26,7 @@ fs.readdir(path.join(__dirname+'/src'), (err, files) => {
 
 app.get('/*', function(req,res) {
 
-  res.sendFile(path.join(__dirname+'/src/index.html'));
+  res.sendFile(path.join(__dirname+'/dist/SDGP/index.html'));
   // res.sendFile('./index.html');
 });
 
