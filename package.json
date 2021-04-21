@@ -3,21 +3,21 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "postinstall": "ng build --output-path angularapp  --aot --prod",
-    "start": "set NODE_OPTIONS=--max_old_space_size=8048 && ng serve",
-    "build": "set NODE_OPTIONS=--max_old_space_size=8048 && ng build",
+    "start": "node server.js",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.1100.2",
-    "@angular/cli": "~11.0.1",
-    "@angular/compiler-cli": "~11.0.1" ,
     "@angular/animations": "~11.0.1",
+    "@angular/cli": "~11.0.1",
     "@angular/common": "~11.0.1",
     "@angular/compiler": "~11.0.1",
+    "@angular/compiler-cli": "~11.0.1",
     "@angular/core": "~11.0.1",
     "@angular/forms": "~11.0.1",
     "@angular/platform-browser": "~11.0.1",
@@ -25,10 +25,16 @@
     "@angular/router": "~11.0.1",
     "@auth0/angular-jwt": "^5.0.2",
     "angular-ng-autocomplete": "^2.0.5",
+    "express": "^4.17.1",
     "ngx-cookie": "^5.0.2",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
+  },
+  "engines": {
+    "node": "v15.4.0",
+    "npm": "7.0.15"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1100.2",
