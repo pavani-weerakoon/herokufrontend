@@ -10,7 +10,15 @@ app.use(express.static(__dirname + '/dist/sdgp'));
 const testFolder = './tests/';
 const fs = require('fs');
 
-fs.readdir(__dirname, (err, files) => {
+
+
+fs.readdir(path.join(__dirname+'/dist'), (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});
+
+fs.readdir(path.join(__dirname+'/src'), (err, files) => {
   files.forEach(file => {
     console.log(file);
   });
