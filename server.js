@@ -7,6 +7,15 @@ const app = express();
 // Serve only the static files form the angularapp directory
 app.use(express.static(__dirname + '/dist/sdgp'));
 
+const testFolder = './tests/';
+const fs = require('fs');
+
+fs.readdir(__dirname, (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});
+
 app.get('/*', function(req,res) {
 
   // res.sendFile(path.join(__dirname+'/public/index.html'));
