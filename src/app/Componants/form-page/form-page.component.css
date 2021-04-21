@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Montserrat&display=swap');
+.main-wrap {
+  margin-bottom: 500px;
+  margin-left: 220px;
+  width: 70%;
+  height: 680px;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  background: linear-gradient(-45deg, #f5f6fa, #e73c7e, #23a6d5, #32ff7e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.col-12{
+  margin-left: 300px;
+  padding:100px 100px 100px 100px;
+}
+span.line01{
+ display: inline-block;
+  width: 500px;
+}
+.vl {
+  border-left: 3px solid black;
+  height: 420px;
+  position: absolute;
+  margin-left: 140px;
+  top:40%;
+}
+
+.login-content{
+  width: 150px;
+  margin-top: -310px;
+}
+
+.text-create-account{
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+  font-size: 15px;
+  text-decoration: underline;
+  text-align: center;
+}
+.login-text {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 170px;
+}
+
+.item-wrap{
+  margin-left: 200px;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #bdc3c7;
+}
+.button-wrap{
+  text-align:center;
+  padding-left: 100px;
+}
+.button-h3{
+  padding-left: 170px;
+}
+.policy-wrap{
+  font-family: 'Big Shoulders Display', cursive;
+  padding-left: 160px;
+  margin-top: 10px;
+}
+.icon-wrap{
+  width: 50px;
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 80px;
+  font-size: 17px;
+}
+.text-input{
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 19px;
+}
+.text-input:focus{
+  outline: none;
+}
+.social-wrap{
+  width: 35px;
+  height: 35px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  background-color: green;
+  display: inline-block;
+  margin-right: 10px;
+
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 8px;
+
+}
+.social-wrap:hover{
+  cursor: pointer;
+}
+.image-wrap{
+  background-image: url("src/assets/logo2.png");
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:100px;
+  margin-left:-200px;
+}
+.submit{
+  background-color: deeppink;
+  width: 250px;
+  height: 38px;
+  margin-left: 160px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 55px;
+  border: none;
+}
+
+.submit:hover{
+  background-color: purple;
+  cursor: pointer;
+}
