@@ -10,13 +10,13 @@ export class LoginServiceService {
   constructor(private http: HttpClient) { }
 
   public registerUser(email: string, password: string): Observable<any>{
-    return this.http.post('http://127.0.0.1:3000/api/v1/adminUserRoute/registerUser', {
+    return this.http.post('https://backendpickerrme.herokuapp.com/api/v1/adminUserRoute/registerUser', {
       email, password
     });
   }
 
   public loginUser(email: string, password: string): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/adminUserRoute/loginUser', {
+    return this.http.get('https://backendpickerrme.herokuapp.com/api/v1/adminUserRoute/loginUser', {
       headers: { email, password }
     });
   }

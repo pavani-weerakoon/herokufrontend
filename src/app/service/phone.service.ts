@@ -11,13 +11,13 @@ export class PhoneService {
   }
 
   public checkMobile(email: string): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/phonePredictRoute/checkPhone', {
+    return this.http.get('https://backendpickerrme.herokuapp.com/api/v1/phonePredictRoute/checkPhone', {
       headers: { email }
     });
   }
 
   public getAllPhone(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/phonePredictRoute/getAllPhone', {
+    return this.http.get('https://backendpickerrme.herokuapp.com/api/v1/phonePredictRoute/getAllPhone', {
     });
   }
 }

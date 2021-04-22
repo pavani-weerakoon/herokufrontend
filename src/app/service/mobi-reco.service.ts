@@ -11,7 +11,7 @@ export class MobiRecoService {
 
 
   public checkMobileRecommendation(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/phoneRecommendationRoute/checkMobileRecommendation', {
+    return this.http.get('https://backendpickerrme.herokuapp.com/api/v1/phoneRecommendationRoute/checkMobileRecommendation', {
     });
   }
 
