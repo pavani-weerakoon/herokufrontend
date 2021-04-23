@@ -22,11 +22,11 @@ export class SellerService {
     });
   }
   public getAllSellers(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/sellerUserRoute/getAllSeller', {
+    return this.http.get('https://pickerrme-backend.herokuapp.com/api/v1/sellerUserRoute/getAllSeller', {
     });
   }
   public deleteCustomer(id: string): Observable<any> {
-    return this.http.delete('http://127.0.0.1:3000/api/v1/sellerUserRoute/deleteSeller',
+    return this.http.delete('https://pickerrme-backend.herokuapp.com/api/v1/sellerUserRoute/deleteSeller',
       {headers: {id}});
   }
 }

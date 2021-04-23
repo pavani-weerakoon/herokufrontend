@@ -11,19 +11,19 @@ export class LapRecoService {
 
 
   public checkLaptopRecommendation(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/laptopRecommendationRoute/checkLaptopRecommendation', {
+    return this.http.get('https://pickerrme-backend.herokuapp.com/api/v1/laptopRecommendationRoute/checkLaptopRecommendation', {
     });
   }
   public checkLaptopRecommendation02(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/laptopRecommendationRoute/checkLaptopRecommendation02', {
+    return this.http.get('https://pickerrme-backend.herokuapp.com/api/v1/laptopRecommendationRoute/checkLaptopRecommendation02', {
     });
   }
   public checkLaptopRecommendation03(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/laptopRecommendationRoute/checkLaptopRecommendation03', {
+    return this.http.get('https://pickerrme-backend.herokuapp.com/api/v1/laptopRecommendationRoute/checkLaptopRecommendation03', {
     });
   }
   public checkLaptopRecommendation04(): Observable<any>{
-    return this.http.get('http://127.0.0.1:3000/api/v1/laptopRecommendationRoute/checkLaptopRecommendation04', {
+    return this.http.get('https://pickerrme-backend.herokuapp.com/api/v1/laptopRecommendationRoute/checkLaptopRecommendation04', {
     });
   }
 }
