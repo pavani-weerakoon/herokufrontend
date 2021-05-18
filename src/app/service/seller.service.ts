@@ -13,7 +13,7 @@ export class SellerService {
 
 
   public saveSeller(seller: sellerDTO): Observable<any>{
-    return this.http.post('http://127.0.0.1:3000/api/v1/sellerUserRoute/saveSeller', {
+    return this.http.post('https://pickerrme-backend.herokuapp.com/api/v1/sellerUserRoute/saveSeller', {
       title: seller.title,
       description: seller.description,
       mobileNo: seller.contactNo,
